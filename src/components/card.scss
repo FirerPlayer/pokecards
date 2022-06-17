@@ -1,80 +1,34 @@
-.card {
-    position: relative;
-    max-width: 300px;
-    max-height: 650px;
-    padding: 30px 20px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+.pokeFont {
+    letter-spacing: 6px;
 }
 
-.pokeSprite {
-    display: block;
-    width: 180px;
-    max-height: 200px;
-    position: relative;
-    margin: 20px auto;
-
+.timeline {
+    width: 80%;
+    margin: auto;
 }
 
-.hp {
-    width: 80px;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 8px 0;
-    border-radius: 30px;
-    margin-left: auto;
-    font-weight: 400;
+.titanium {
+    background: -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -moz-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -ms-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -o-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background-size: 10px 10px, 10px 10px, 100% 100%;
+    background-position: 1px 1px, 0px 0px, center center;
 }
 
-.poke-name {
-    text-align: center;
-    font-weight: 600;
+.toolText {
+    padding-top: 2px;
+    margin-top: -20px;
+    visibility: hidden;
+    letter-spacing: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    line-height: normal;
+    transition: margin-top cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
-.types {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0 40px 0;
-}
-
-.hp span,
-.types span {
-    font-size: 12px;
-    letter-spacing: 0.4px;
-    font-weight: 600;
-}
-
-.types span {
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: #ffffff;
-}
-
-.stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.stats p {
-    color: #404060;
-}
-
-// .card:hover {
-// 	-webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-// 	animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-// }
-
-
-@keyframes flip-vertical-right {
-    0% {
-        -webkit-transform: rotateY(0);
-        transform: rotateY(0);
-    }
-
-    100% {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-    }
+.tooltip:hover .toolText {
+    visibility: visible;
+    margin-top: 22px;
 }
