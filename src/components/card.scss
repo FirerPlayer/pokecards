@@ -1,34 +1,55 @@
 .pokeFont {
-    letter-spacing: 6px;
-}
-
-.timeline {
-    width: 80%;
-    margin: auto;
+  letter-spacing: 4px;
+  font-size: x-large;
 }
 
 .titanium {
-    background: -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-    background: -moz-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-    background: -ms-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-    background: -o-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-    background: radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-    background-size: 10px 10px, 10px 10px, 100% 100%;
-    background-position: 1px 1px, 0px 0px, center center;
+  background-image: linear-gradient(
+    135deg,
+    #{"hsl(0deg 0% 100%) 1%"},
+    #{"hsl(46deg 100% 95%) 43%"},
+    #{"hsl(46deg 100% 90%) 50%"},
+    #{"hsl(46deg 100% 85%) 51%"},
+    #{"hsl(46deg 100% 80%) 51%"},
+    #{"hsl(47deg 98% 75%) 49%"},
+    #{"hsl(46deg 99% 70%) 49%"},
+    #{"hsl(46deg 99% 65%) 50%"},
+    #{"hsl(46deg 99% 60%) 57%"},
+    #{"hsl(46deg 99% 55%) 99%"}
+  );
 }
 
 .toolText {
-    padding-top: 2px;
-    margin-top: -20px;
-    visibility: hidden;
-    letter-spacing: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    line-height: normal;
-    transition: margin-top cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  padding-top: 2px;
+  margin-top: -20px;
+  visibility: hidden;
+  letter-spacing: normal;
+  transition: margin-top cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 .tooltip:hover .toolText {
-    visibility: visible;
-    margin-top: 22px;
+  visibility: visible;
+  margin-top: 24px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
+.load-back {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #feca1b 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 70px;
+  position: relative;
 }
