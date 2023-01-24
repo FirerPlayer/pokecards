@@ -54,7 +54,9 @@ function Ability(props) {
               {props.ability.name}
               <br></br>
             </h5>
-            <h5 className="font-ubunto text-xs min-w-[calc(8em+3vw)]">{drc}</h5>
+            <h5 className="font-ubunto text-xs md:text-sm min-w-[calc(8em+3vw)]">
+              {drc}
+            </h5>
           </div>
         </div>
       )}
@@ -135,7 +137,7 @@ function Card(props) {
             <div className="w-full flex justify-center items-center">
               <div className=" rounded-full w-fit h-fit">
                 <img
-                  className="md:min-w-[180px] "
+                  className="md:min-w-[170px] min-w-[140px]"
                   src={pokemon.spriteUrl}
                   alt={pokemon.spriteUrl}
                 ></img>
