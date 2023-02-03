@@ -8,15 +8,21 @@
 <li>The main propose is to train and pratique asynchrony programing, paginating data, react state management and make beautiful responsible user interfaces.</li>
 </ul><h2>Technologies Used</h2>
 <hr><ul>
-<li>HTML</li>
+<li>HTML 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20px" heigth="20px" />
+          </li>
 </ul><ul>
-<li>CSS</li>
+<li>CSS   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="20px" heigth="20px" />
+          </li>
 </ul><ul>
-<li>JavaScript</li>
+<li>JavaScript
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20px" heigth="20px" /></li>
 </ul><ul>
-<li>React</li>
+<li>React
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="20px" heigth="20px" /></li>
 </ul><ul>
-<li>Tailwind CSS</li>
+<li>Tailwind CSS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="20px" heigth="20px" /></li>
 </ul><ul>
 <li>react-paginating</li>
 </ul><ul>
@@ -30,7 +36,9 @@
 <li>Pagination with items per page mutable</li>
 </ul><ul>
 <li>Mobile and responsive desing</li>
-ul></ul>
+<ul></ul>
+<li>Smooth loading animation</li>
+<ul></ul>
 
 <h2>Available Scripts</h2>
 
